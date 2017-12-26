@@ -1,0 +1,10 @@
+<h1>Welcome!</h1>
+<h3>List of Restaurants in OUG, KL.</h3>
+<!-- use the variable name 'restaurant' to access the values sent over from app.js -->
+<!-- each Javascript line must start with the tag "<%" and end with the tag "%>" -->
+<%restaurants.forEach(function(restaurant){%>
+  <!-- to display data from the calling function, use the tag "<%=" and end it with the tag "%>".
+  take note of the use of the symbol "=" to display data! -->
+  <li><%=restaurant.name%><p><img src="<%=restaurant.image%>"></p></li>
+<!-- each Javascript line must start with the tag "<%" and end with the tag "%>" -->
+<%});%>
